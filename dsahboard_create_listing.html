@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>DB.Card</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/summernote.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/rtl.css">
+</head>
+
+<body>
+
+  <!--=============================
+        DASHBOARD MENU START
+  ==============================-->
+  <nav class="navbar dashboard_menu">
+    <span class="menu_icon"><i class="fal fa-bars"></i></span>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/right_user_1.jpg" alt="img" class="img-fluid w-100">
+          elara jahan
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="#">my profile</a></li>
+          <li><a class="dropdown-item" href="#">create listing</a></li>
+          <li><a class="dropdown-item" href="#">reviews</a></li>
+          <li><a class="dropdown-item" href="#">logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!--=============================
+        DASHBOARD MENU END
+  ==============================-->
+
+
+
+  <!--=============================
+        DASHBOARD START
+  ==============================-->
+    <section id="dashboard">
+      <div class="container-fluid">
+        <div class="dashboard_sidebar">
+          <span class="close_icon"><i class="far fa-times"></i></span>
+          <a href="dsahboard.html" class="dash_logo"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+          <ul class="dashboard_link">
+              <li><a href="dsahboard.html"><i class="fas fa-tachometer"></i>Dashboard</a></li>
+              <li><a href="dsahboard_listing.html"><i class="fas fa-list-ul"></i> My Listing</a></li>
+              <li><a class="active" href="dsahboard_create_listing.html"><i class="fal fa-plus-circle"></i> Create Listing</a></li>
+              <li><a href="dsahboard_review.html"><i class="far fa-star"></i> Reviews</a></li>
+              <li><a href="dsahboard_wishlist.html"><i class="far fa-heart"></i> Wishlist</a></li>
+              <li><a href="dsahboard_profile.html"><i class="far fa-user"></i> My Profile</a></li>
+              <li><a href="dsahboard_order.html"><i class="fal fa-notes-medical"></i> Orders</a></li>
+              <li><a href="dsahboard_package.html"><i class="fal fa-gift-card"></i> Package</a></li>
+              <li><a href="#"><i class="far fa-sign-out-alt"></i> Logo</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-9 col-xxl-10 ms-auto">
+              <div class="dashboard_content">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="dashboard_breadcrumb">
+                      <span>Create Listing</span>
+                      <ul>
+                        <li><a href="#">Home <i class="fas fa-caret-right"></i></a></li>
+                        <li><a href="#">Listing <i class="fas fa-caret-right"></i></a></li>
+                        <li><a class="bread_active" href="#">Create Listing</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="my_listing">
+                  <form>
+                      <h4>Create Listing</h4>
+                      <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                          <div class="my_listing_single">
+                            <label>title</label>
+                            <div class="input_area">
+                              <input type="text" placeholder="Title *">
+                              <i class="fal fa-edit"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                          <div class="my_listing_single">
+                            <label>slug</label>
+                            <div class="input_area">
+                              <input type="text" placeholder="Slug *">
+                              <i class="fal fa-edit"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                          <div class="my_listing_single">
+                            <label>categories</label>
+                            <div class="input_area">
+                              <div class="wsus__search_area">
+                                <i class="fal fa-edit"></i> 
+                                <select class="select_2" name="state">
+                                    <option value="">categories</option>
+                                    <option value="">categories 1</option>
+                                    <option value="">categories 2</option>
+                                    <option value="">categories 3</option>
+                                    <option value="">categories 4</option>
+                                    <option value="">categories 5</option>
+                                </select>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                          <div class="my_listing_single">
+                            <label>location</label>
+                            <div class="input_area">
+                              <div class="wsus__search_area">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <select class="select_2" name="state">
+                                  <option value="">location</option>
+                                  <option value="">location 1</option>
+                                  <option value="">location 2</option>
+                                  <option value="">location 3</option>
+                                  <option value="">location 4</option>
+                                  <option value="">location 5</option>
+                              </select>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                          <div class="my_listing_single">
+                            <label>address</label>
+                            <div class="input_area">
+                              <input type="text" placeholder="Address *">
+                              <i class="fas fa-street-view"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                          <div class="my_listing_single">
+                            <label>phone</label>
+                            <div class="input_area">
+                              <input type="text" placeholder="Phone">
+                              <i class="fas fa-phone-alt"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                          <div class="my_listing_single">
+                            <label>email</label>
+                            <div class="input_area">
+                              <input type="email" placeholder="Email *">
+                              <i class="fal fa-envelope"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                          <div class="my_listing_single">
+                            <label>website</label>
+                            <div class="input_area">
+                              <input type="email" placeholder="Web">
+                              <i class="fal fa-globe"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-12">
+                          <div class="my_listing_single mar_bottom">
+                            <label>Google Map Embed Code</label>
+                            <div class="input_area">
+                              <textarea cols="3" rows="5" placeholder="Map *"></textarea>
+                              <i class="fal fa-globe"></i>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                  </form>
+                </div>
+                <div class="my_listing list_mar list_padding">
+                  <h4>Video and Image</h4>
+                  <div class="row">
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>Logo</label>
+                        <div class="input_area input_area_2">
+                          <input type="file" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>Thumbnail Image</label>
+                        <div class="input_area input_area_2">
+                          <input type="file" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>inner images</label>
+                        <div class="input_area input_area_2">
+                          <input type="file" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>PDF</label>
+                        <div class="input_area input_area_2">
+                          <input type="file" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div id="medicine_row">
+                        <label for="name">images <span>(Maximum images-10)</span></label>
+                          <div class="medicine_row_input">
+                            <input type="file" name="name[]" id="name">
+                            <button type="button" id="add_row"><i class="fas fa-plus" aria-hidden="true"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div id="medicine_row2">
+                        <label for="name">videos <span>(Maximum videos-10)</span></label>
+                          <div class="medicine_row_input inpiut_pad">
+                            <input type="text" placeholder="www.youtube.com" name="name[]" id="name">
+                            <button type="button" id="add_row2"><i class="fas fa-plus" aria-hidden="true"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my_listing list_mar list_padding">
+                  <h4>Listing Details Information</h4>
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <div class="my_listing_single list_mar">
+                        <label>Short Description</label>
+                        <div class="input_area input_area_2">
+                          <textarea cols="3" rows="5" placeholder="Description *"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-12">
+                      <div class="my_listing_single">
+                        <label>Description</label>
+                        <textarea class="form-control summer_note"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my_listing list_mar list_padding">
+                  <h4>Amenities <span>(Maximum Aminities-20)</span></h4>
+                  <div class="row">
+                    <div class="col-xl-6 col-xxl-4 col-md-6">
+                      <div class="amenities_check_area">
+                        <div class="wsus__pro_check">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                              <label class="form-check-label" for="flexCheckIndeterminate">
+                                Accepts Credit Cards
+                              </label>
+                          </div>
+                      </div>
+                      <i class="far fa-cannabis"></i>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-xxl-4 col-md-6">
+                      <div class="amenities_check_area">
+                        <div class="wsus__pro_check">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate2">
+                              <label class="form-check-label" for="flexCheckIndeterminate2">
+                                Alcohol
+                              </label>
+                          </div>
+                      </div>
+                      <i class="fas fa-cocktail"></i>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-xxl-4 col-md-6">
+                      <div class="amenities_check_area">
+                        <div class="wsus__pro_check">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate3">
+                              <label class="form-check-label" for="flexCheckIndeterminate3">
+                                Bike Parking
+                              </label>
+                          </div>
+                      </div>
+                      <i class="fab fa-codiepie"></i>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-xxl-4 col-md-6">
+                      <div class="amenities_check_area">
+                        <div class="wsus__pro_check">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate4">
+                              <label class="form-check-label" for="flexCheckIndeterminate4">
+                                Elevator in building
+                              </label>
+                          </div>
+                      </div>
+                      <i class="fab fa-cloudscale"></i>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-xxl-4 col-md-6">
+                      <div class="amenities_check_area">
+                        <div class="wsus__pro_check">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate5">
+                              <label class="form-check-label" for="flexCheckIndeterminate5">
+                                Free coffee and tea
+                              </label>
+                          </div>
+                      </div>
+                      <i class="fab fa-cloudversify"></i>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-xxl-4 col-md-6">
+                      <div class="amenities_check_area">
+                        <div class="wsus__pro_check">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate6">
+                              <label class="form-check-label" for="flexCheckIndeterminate6">
+                                Good for kids
+                              </label>
+                          </div>
+                      </div>
+                      <i class="fal fa-clouds-sun"></i>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-xxl-4 col-md-6">
+                      <div class="amenities_check_area">
+                        <div class="wsus__pro_check">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate7">
+                              <label class="form-check-label" for="flexCheckIndeterminate7">
+                                Reservations
+                              </label>
+                          </div>
+                      </div>
+                      <i class="far fa-claw-marks"></i>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-xxl-4 col-md-6">
+                      <div class="amenities_check_area">
+                        <div class="wsus__pro_check">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate8">
+                              <label class="form-check-label" for="flexCheckIndeterminate8">
+                                Accepts Credit Cards
+                              </label>
+                          </div>
+                      </div>
+                       <i class="far fa-campfire"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my_listing list_mar list_padding">
+                  <h4>Social Link</h4>
+                  <div class="row">
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>facebook</label>
+                        <div class="input_area">
+                          <input type="text" placeholder="www.facebook.com">
+                          <i class="fab fa-facebook-f"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>twitter</label>
+                        <div class="input_area">
+                          <input type="text" placeholder="www.twitter.com">
+                          <i class="fab fa-twitter"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>instagram</label>
+                        <div class="input_area">
+                          <input type="text" placeholder="www.instagram.com">
+                          <i class="fab fa-linkedin-in"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>youtube</label>
+                        <div class="input_area">
+                          <input type="text" placeholder="www.youtube.com">
+                          <i class="fab fa-youtube"></i>
+                        </div>
+                      </div>
+                    </div>
+                    
+                 </div>
+                </div>
+                <div class="my_listing list_mar">
+                  <div class="row">
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>Allow Feature</label>
+                        <div class="input_area">
+                          <div class="wsus__search_area">
+                            <i class="fal fa-smile"></i>
+                            <select class="select_2" name="state">
+                                <option value="">yes</option>
+                                <option value="">no </option>
+                            </select>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                      <div class="my_listing_single">
+                        <label>Seo Title</label>
+                        <div class="input_area">
+                          <div class="input_area">
+                            <input type="text" placeholder="Seo Title">
+                            <i class="fal fa-envelope"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-12">
+                      <div class="my_listing_single">
+                        <label>Seo Description</label>
+                        <div class="input_area">
+                          <textarea cols="3" rows="5" placeholder="Your Text"></textarea>
+                          <i class="fal fa-envelope"></i>
+                        </div>
+                      </div>
+                      <button type="submit" class="read_btn">save</button>
+                    </div>
+                 </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!--=============================
+        DASHBOARD START
+  ==============================-->
+
+
+    <!--=============SCROLL BTN==============-->
+    <div class="scroll_btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>  
+    <!--=============SCROLL BTN==============-->
+
+
+
+
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--slick js-->
+    <script src="js/slick.min.js"></script>
+    <!--venobox js-->
+    <script src="js/venobox.min.js"></script>
+    <!--counter js-->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <!--nice select js-->
+    <script src="js/select2.min.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--summer note js-->
+    <script src="js/summernote.min.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
