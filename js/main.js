@@ -31,9 +31,6 @@ $(function () {
   });
 
 
-
-
-
   //=========COUNTER JS=========   
   $('.counter').countUp();
 
@@ -42,6 +39,11 @@ $(function () {
   $(document).ready(function () {
     $('.select_2').select2();
   });
+
+
+  //=======select js====== 
+  $('.select_js').niceSelect();
+
 
 
   // ===VENO BOX JS===

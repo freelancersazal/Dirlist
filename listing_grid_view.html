@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
     <title>DB.Card</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/all.min.css">
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="css/venobox.min.css">
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/summernote.min.css">
-
+    <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- <link rel="stylesheet" href="css/rtl.css"> -->
@@ -28,7 +29,8 @@
             <div class="row">
                 <div class="col-xl-6 col-md-7 d-none d-md-block">
                     <ul class="wsus__topbar_left">
-                        <li><a href="mailto:support@websolutionus.com"><i class="fal fa-envelope"></i> support@websolutionus.com</a></li>
+                        <li><a href="mailto:support@websolutionus.com"><i class="fal fa-envelope"></i>
+                                support@websolutionus.com</a></li>
                         <li><a href="callto:+6958474522655"><i class="fal fa-phone-alt"></i>+6958474522655</a></li>
                     </ul>
                 </div>
@@ -39,7 +41,8 @@
                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fab fa-viber"></i></a></li>
-                        <li><a class="wsus__topbar_login" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="far fa-sign-in-alt"></i> login</a></li>
+                        <li><a class="wsus__topbar_login" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                href="#"><i class="far fa-sign-in-alt"></i> login</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,48 +60,57 @@
     <section id="wsus__login_popup">
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">sign in</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">login</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">register</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">forget passeord</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <form>
-                                <input type="text" placeholder="Email *">
-                                <input type="email" placeholder="Password *">
-                                <button class="read_btn" type="submit">login</button>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <form>
-                                <input type="text" placeholder="Name *">
-                                <input type="email" placeholder="Email *">
-                                <input type="text" placeholder="Password *">
-                                <button class="read_btn" type="submit">Register</button>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                            <form>
-                                <input type="text" placeholder="Password *">
-                                <button class="read_btn" type="submit">send mail</button>
-                            </form>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">sign in</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">register</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">forget passeord</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <form>
+                                    <input type="text" placeholder="Email *">
+                                    <input type="email" placeholder="Password *">
+                                    <button class="read_btn" type="submit">login</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <form>
+                                    <input type="text" placeholder="Name *">
+                                    <input type="email" placeholder="Email *">
+                                    <input type="text" placeholder="Password *">
+                                    <button class="read_btn" type="submit">Register</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <form>
+                                    <input type="text" placeholder="Password *">
+                                    <button class="read_btn" type="submit">send mail</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -116,7 +128,9 @@
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="DB.Card">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="far fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -151,7 +165,8 @@
                 </ul>
                 <ul class="right_menu">
                     <li class="nav-item signin">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="far fa-plus-circle"></i> add listing</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i
+                                class="far fa-plus-circle"></i> add listing</a>
                     </li>
                 </ul>
             </div>
@@ -223,49 +238,57 @@
                             </div>
                             <div class="wsus__pro_check">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate4">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate4">
                                     <label class="form-check-label" for="flexCheckIndeterminate4">
                                         Heating
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate5">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate5">
                                     <label class="form-check-label" for="flexCheckIndeterminate5">
                                         Smoking Allow
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate6">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate6">
                                     <label class="form-check-label" for="flexCheckIndeterminate6">
                                         Icon
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate7">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate7">
                                     <label class="form-check-label" for="flexCheckIndeterminate7">
                                         Parking
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate">
                                     <label class="form-check-label" for="flexCheckIndeterminate">
                                         Air Condition
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate1">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate1">
                                     <label class="form-check-label" for="flexCheckIndeterminate1">
                                         Internet
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate2">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate2">
                                     <label class="form-check-label" for="flexCheckIndeterminate2">
                                         Terrace
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate3">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="flexCheckIndeterminate3">
                                     <label class="form-check-label" for="flexCheckIndeterminate3">
                                         Wi-Fi
                                     </label>
@@ -275,14 +298,15 @@
                         </div>
                     </form>
                 </div>
-                
+
                 <div class="col-xl-8 col-lg-8">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="wsus__property_topbar">
                                 <div class="wsus__property_topbar_left">
                                     <ul>
-                                        <li><a class="wsus_active_bar" href="listing_grid_view.html"><i class="fas fa-th"></i></a></li>
+                                        <li><a class="wsus_active_bar" href="listing_grid_view.html"><i
+                                                    class="fas fa-th"></i></a></li>
                                         <li><a href="listing_list_view.html"><i class="fas fa-list-ul"></i></a></li>
                                     </ul>
                                 </div>
@@ -307,10 +331,11 @@
                                 </a>
                                 <a class="love" href="#"><i class="fas fa-heart"></i></a>
                                 <a class="location" href="#"><i class="fal fa-map-marker-alt"></i></a>
-                                <a class="map" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"><i class="fal fa-map-marked-alt"></i></a>
+                                <a class="map" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"><i
+                                        class="fal fa-map-marked-alt"></i></a>
                                 <div class="wsus__featured_single_text">
                                     <a class="small_text purple" href="#">shopping mall</a>
-                                    <p class="list_rating"> 
+                                    <p class="list_rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -330,10 +355,11 @@
                                 </a>
                                 <a class="love" href="#"><i class="fas fa-heart"></i></a>
                                 <a class="location" href="#"><i class="fal fa-map-marker-alt"></i></a>
-                                <a class="map" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"><i class="fal fa-map-marked-alt"></i></a>
+                                <a class="map" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"><i
+                                        class="fal fa-map-marked-alt"></i></a>
                                 <div class="wsus__featured_single_text">
                                     <a class="small_text red" href="#">hotel and resort</a>
-                                    <p class="list_rating"> 
+                                    <p class="list_rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -353,10 +379,11 @@
                                 </a>
                                 <a class="love" href="#"><i class="fas fa-heart"></i></a>
                                 <a class="location" href="#"><i class="fal fa-map-marker-alt"></i></a>
-                                <a class="map" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"><i class="fal fa-map-marked-alt"></i></a>
+                                <a class="map" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"><i
+                                        class="fal fa-map-marked-alt"></i></a>
                                 <div class="wsus__featured_single_text">
                                     <a class="small_text green" href="#">school and college</a>
-                                    <p class="list_rating"> 
+                                    <p class="list_rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -376,10 +403,11 @@
                                 </a>
                                 <a class="love" href="#"><i class="fas fa-heart"></i></a>
                                 <a class="location" href="#"><i class="fal fa-map-marker-alt"></i></a>
-                                <a class="map" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"><i class="fal fa-map-marked-alt"></i></a>
+                                <a class="map" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"><i
+                                        class="fal fa-map-marked-alt"></i></a>
                                 <div class="wsus__featured_single_text">
                                     <a class="small_text purple" href="#">home and office</a>
-                                    <p class="list_rating"> 
+                                    <p class="list_rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -397,7 +425,8 @@
                                 <nav aria-label="">
                                     <ul class="pagination">
                                         <li class="page-item">
-                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-chevron-left"></i></a>
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i
+                                                    class="fas fa-chevron-left"></i></a>
                                         </li>
                                         <li class="page-item"><a class="page-link" href="#">01</a></li>
                                         <li class="page-item" aria-current="page">
@@ -422,32 +451,39 @@
     <section id="wsus__map_popup">
         <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-            <div class="modal-content">
-                <button type="button" class="btn-close popup_close"  data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-12 col-xl-12 col-md-12">
-                            <div class="map_popup_content">
-                                <img src="images/location_3.jpg" alt="images" class="img-fluid w-100">
-                                <div class="map_popup_text">
-                                    <span><i class="far fa-star"></i> Featured</span>
-                                    <span class="red"><i class="far fa-check"></i> verified</span>
-                                    <h5>market shopping mall</h5>
-                                    <a class="call" href="callto:+69552200325444"><i class="fal fa-phone-alt"></i> +69552200325444</a>
-                                    <a class="mail" href="mailto:example@gmail.com"><i class="fal fa-envelope"></i> example@gmail.com</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur at adipisicing elit. Corporis nisi deleniti neque recusandae, incidunt eum temporibus quod.</p>
-                                    <a class="read_btn" href="#">read more</a>
+                <div class="modal-content">
+                    <button type="button" class="btn-close popup_close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="far fa-times"></i></button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 col-xl-12 col-md-12">
+                                <div class="map_popup_content">
+                                    <img src="images/location_3.jpg" alt="images" class="img-fluid w-100">
+                                    <div class="map_popup_text">
+                                        <span><i class="far fa-star"></i> Featured</span>
+                                        <span class="red"><i class="far fa-check"></i> verified</span>
+                                        <h5>market shopping mall</h5>
+                                        <a class="call" href="callto:+69552200325444"><i class="fal fa-phone-alt"></i>
+                                            +69552200325444</a>
+                                        <a class="mail" href="mailto:example@gmail.com"><i class="fal fa-envelope"></i>
+                                            example@gmail.com</a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur at adipisicing elit. Corporis nisi
+                                            deleniti neque recusandae, incidunt eum temporibus quod.</p>
+                                        <a class="read_btn" href="#">read more</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-xl-12 col-md-12">
-                            <div class="map_popup_content_map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9858724809806!2d90.37746441534016!3d23.747883194788518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b17fc6ff45%3A0xf04f00d1bfe07561!2sDhanmondi%20Lake%20Park%2C%20Rd%2010%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1634532335570!5m2!1sen!2sbd" width="1000" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="col-12 col-xl-12 col-md-12">
+                                <div class="map_popup_content_map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9858724809806!2d90.37746441534016!3d23.747883194788518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b17fc6ff45%3A0xf04f00d1bfe07561!2sDhanmondi%20Lake%20Park%2C%20Rd%2010%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1634532335570!5m2!1sen!2sbd"
+                                        width="1000" height="800" style="border:0;" allowfullscreen=""
+                                        loading="lazy"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -456,7 +492,7 @@
     ===========================-->
 
 
-    
+
     <!--==========================
          FOOTER PART START
     ===========================-->
@@ -466,7 +502,8 @@
                 <div class="col-xl-3 col-sm-12 col-md-6 col-lg-6">
                     <div class="footer_text">
                         <h3>About Us</h3>
-                        <p>In publishing and graphic designLorem Ipsum dummy and typesetting Degital Marketeing. has been the industry's standard dummy text ever since.</p>
+                        <p>In publishing and graphic designLorem Ipsum dummy and typesetting Degital Marketeing. has
+                            been the industry's standard dummy text ever since.</p>
                         <ul class="footer_icon">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -511,9 +548,13 @@
                     <div class="footer_text footer_contact">
                         <h3>Information</h3>
                         <ul class="footer_link">
-                            <li><p><i class="far fa-map-marker-alt"></i> San Francisco City Hall, San Francisco</p></li>
-                            <li><a href="#"><a href="mailto:example@gmail.com"><i class="fal fa-envelope"></i> example@gmail.com</a></li>
-                            <li><a href="#"><a href="callto:+6985224411026"><i class="fal fa-phone-alt"></i> +6985224411026</a></li>
+                            <li>
+                                <p><i class="far fa-map-marker-alt"></i> San Francisco City Hall, San Francisco</p>
+                            </li>
+                            <li><a href="#"><a href="mailto:example@gmail.com"><i class="fal fa-envelope"></i>
+                                        example@gmail.com</a></li>
+                            <li><a href="#"><a href="callto:+6985224411026"><i class="fal fa-phone-alt"></i>
+                                        +6985224411026</a></li>
                         </ul>
                     </div>
                 </div>
@@ -527,7 +568,7 @@
                     </div>
                     <div class="col-xl-6 col-md-7">
                         <ul class="footer_bottom_link">
-                            <li><a href="#">Terms and Conditions</a></li>  
+                            <li><a href="#">Terms and Conditions</a></li>
                             <li><a href="#">Privacy Policy </a></li>
                             <li><a href="#"> Contact </a></li>
                         </ul>
@@ -544,7 +585,7 @@
     <!--=============SCROLL BTN==============-->
     <div class="scroll_btn">
         <i class="fas fa-chevron-up"></i>
-    </div>  
+    </div>
     <!--=============SCROLL BTN==============-->
 
 
@@ -569,6 +610,8 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <!--summer_note js-->
     <script src="js/summernote.min.js"></script>
+    <!-- nice select js-->
+    <script src="js/jquery.nice-select.min.js"></script>
 
     <!--main/custom js-->
     <script src="js/main.js"></script>

@@ -1571,11 +1571,21 @@
 
 
 
+#wsus__topbar .nice-select {
+	padding-left: 35px;
+	padding-right: 15px;
+	text-align: right !important;
+}
 
+#wsus__topbar .nice-select:after {
+	right: auto;
+	left: 15px;
+}
 
-
-
-
+#wsus__topbar .nice-select .option {
+	text-align: right;
+	margin-right: 0;
+}
 
 
 
