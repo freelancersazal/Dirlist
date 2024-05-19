@@ -1355,8 +1355,6 @@
 	right: 0;
 }
 
-
-
 /* home 3 start */
 .main_menu_3 .menu_droapdown {
 	left: auto;
@@ -1546,6 +1544,47 @@
 }
 
 /* home 3 end */
+
+.home_2 .wsus__topbar_right li select {
+	background-position: left 0.7rem top 50%;
+}
+
+.home_2 .wsus__topbar_left li {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+.home_3 .wsus__topbar_right li select {
+	border-left: 0;
+	border-right: 1px solid #ffffff36;
+}
+
+.wsus__topbar_left li {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 1200px) and (max-width: 1399px) {
