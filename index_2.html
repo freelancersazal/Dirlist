@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>DB.Card</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/summernote.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/rtl.css">
+</head>
+
+<body class="home_2">
+
+    <!--==========================
+        LOG IN POPUP START
+    ===========================-->
+    <section id="wsus__login_popup">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">sign in</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">register</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">forget passeord</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <form>
+                                    <input type="text" placeholder="Email *">
+                                    <input type="email" placeholder="Password *">
+                                    <button class="common_btn_2" type="submit">login</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <form>
+                                    <input type="text" placeholder="Name *">
+                                    <input type="email" placeholder="Email *">
+                                    <input type="text" placeholder="Password *">
+                                    <button class="common_btn_2" type="submit">Register</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <form>
+                                    <input type="text" placeholder="Password *">
+                                    <button class="common_btn_2" type="submit">send mail</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========================
+       LOG IN POPUP END
+    ===========================-->
+
+
+    <!--==========================
+        MENU PART START
+    ===========================-->
+    <nav class="navbar navbar-expand-lg main_menu main_menu_2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo2.png" alt="DB.Card" class="img-fluid w-100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="far fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listing_grid_view.html">listing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">pages <i class="far fa-chevron-down"></i></a>
+                        <ul class="menu_droapdown">
+                            <li><a href="list_category.html">list category</a></li>
+                            <li><a href="blog_details.html">blog details</a></li>
+                            <li><a href="listing_details.html">listing details</a></li>
+                            <li><a href="dsahboard.html">dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact us</a>
+                    </li>
+                </ul>
+                <ul class="right_menu">
+                    <li class="nav-item">
+                        <a class="user_btn" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">
+                            <span><img src="images/user_icon_black.png" alt="User" class="img-fluid"></span>
+                            login
+                        </a>
+                    </li>
+                    <li class="nav-item signin">
+                        <a class="common_btn_2" href="#"><i class="far fa-plus"></i> add listing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--==========================
+        MENU PART END
+    ===========================-->
+
+
+    <!--==========================
+        BANNER 2 START
+    ===========================-->
+    <section class="wsus__banner_2" style="background: url(images/banner_2_bg1.jpg);">
+        <div class="wsus__banner_overlay_2">
+            <div class="row">
+                <div class="col-xxl-7 col-xl-10">
+                    <div class="wsus__banner_text_2">
+                        <h5>welcome to DIRLIST</h5>
+                        <h1>Find your perfect place.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores commodi culpa
+                            sed, nam voluptatibus.</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-xl-3 col-sm-6 col-lg-3">
+                                    <div class="banner_input">
+                                        <input type="text" placeholder="Type here">
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-6 col-lg-3">
+                                    <select class="select_2" name="state">
+                                        <option value="">categories</option>
+                                        <option value="">categories 1</option>
+                                        <option value="">categories 2</option>
+                                        <option value="">categories 3</option>
+                                        <option value="">categories 4</option>
+                                        <option value="">categories 5</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-3 col-sm-6 col-lg-3">
+                                    <select class="select_2" name="state">
+                                        <option value="">location</option>
+                                        <option value="">location 1</option>
+                                        <option value="">location 2</option>
+                                        <option value="">location 3</option>
+                                        <option value="">location 4</option>
+                                        <option value="">location 5</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-3 col-sm-6 col-lg-3">
+                                    <div class="search_button">
+                                        <button type="submit" class="common_btn_2">search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========================
+        BANNER 2 END
+    ===========================-->
+
+
+    <!--==========================
+        CATEGORY 2 START
+    ===========================-->
+    <section class="wsus__category_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 m-auto">
+                    <div class="wsus__section_heading mb-4">
+                        <h5>category</h5>
+                        <h2>explore <span>category</span> type</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row category_2_slider">
+                <div class="col-xl-2">
+                    <div class="wsus__single_category_2">
+                        <span><img src="images/category_icon_1.png" alt="category" class="img-fluid w-100"></span>
+                        <a class="title" href="#">house</a>
+                        <p>403 listing</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__single_category_2">
+                        <span><img src="images/category_icon_2.png" alt="category" class="img-fluid w-100"></span>
+                        <a class="title" href="#">Apartments</a>
+                        <p>27 listing</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__single_category_2">
+                        <span><img src="images/category_icon_3.png" alt="category" class="img-fluid w-100"></span>
+                        <a class="title" href="#">office</a>
+                        <p>304 listing</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__single_category_2">
+                        <span><img src="images/category_icon_4.png" alt="category" class="img-fluid w-100"></span>
+                        <a class="title" href="#">Commercial</a>
+                        <p>48 listing</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__single_category_2">
+                        <span><img src="images/category_icon_5.png" alt="category" class="img-fluid w-100"></span>
+                        <a class="title" href="#">parking lot</a>
+                        <p>52 listing</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__single_category_2">
+                        <span><img src="images/category_icon_6.png" alt="category" class="img-fluid w-100"></span>
+                        <a class="title" href="#">Land</a>
+                        <p>87 listing</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="wsus__single_category_2">
+                        <span><img src="images/category_icon_3.png" alt="category" class="img-fluid w-100"></span>
+                        <a class="title" href="#">office</a>
+                        <p>304 listing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========================
+        CATEGORY 2 END
+    ===========================-->
+
+
+    <!--==========================
+        POPULAR CITY 2 START
+    ===========================-->
+    <section class="wsus__popular_city_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 m-auto">
+                    <div class="wsus__section_heading mb-4">
+                        <h5>cities</h5>
+                        <h2>most popular <span>cities</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-sm-6 col-lg-4">
+                    <a class="wsus__single_cities_2" href="#">
+                        <img src="images/cities_img_1.jpg" alt="cities" class="img-fluid w-100">
+                        <div class="text">
+                            <p>Mumbai</p>
+                            <span>354 listing</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-lg-4">
+                    <a class="wsus__single_cities_2" href="#">
+                        <img src="images/cities_img_3.jpg" alt="cities" class="img-fluid w-100">
+                        <div class="text">
+                            <p>New York</p>
+                            <span>257 listing</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-lg-4">
+                    <a class="wsus__single_cities_2" href="#">
+                        <img src="images/cities_img_2.jpg" alt="cities" class="img-fluid w-100">
+                        <div class="text">
+                            <p>Chicago</p>
+                            <span>38 listing</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-lg-4">
+                    <a class="wsus__single_cities_2" href="#">
+                        <img src="images/cities_img_4.jpg" alt="cities" class="img-fluid w-100">
+                        <div class="text">
+                            <p>London</p>
+                            <span>142 listing</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========================
+        POPULAR CITY 2 END
+    ===========================-->
+
+
+    <!--==========================
+        ABOUT US 2 STYART
+    ===========================-->
+    <section class="wsus__about_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-10">
+                    <div class="wsus__about_us_img">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="img_1">
+                                    <img src="images/about_img_2.jpg" alt="About" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="img_2">
+                                    <img src="images/about_img_4.jpg" alt="About" class="img-fluid w-100">
+                                </div>
+                                <div class="img_2 mt-4">
+                                    <img src="images/about_img_3.jpg" alt="About" class="img-fluid w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 m-auto">
+                    <div class="wsus__about_us_text">
+                        <div class="wsus__section_heading">
+                            <h5>Why choose us</h5>
+                            <h2>Let's Find the Right <span>Selling</span> Option for you</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam excepturi sed
+                            ullam ducimus obcaecati?</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, qui assum oblique praesent.</li>
+                            <li>Quo ei erant essent scaevola, est ut clita dolorem.</li>
+                            <li>Mel ut decore salutandi intellegam.</li>
+                            <li>Labitur epicurei vis cu, in mei rationibus.</li>
+                            <li>Mel ut decore salutandi intellegam.</li>
+                            <li>Labitur epicurei vis cu, in mei rationibus.</li>
+                        </ul>
+                        <a href="#">read more <i class="fal fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========================
+        ABOUT US 2 END
+    ===========================-->
+
+
+    <!--==========================
+        COUNTER 2 START
+    ===========================-->
+    <section class="wsus__counter_2">
+        <div class="wsus__counter_2_overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="d-flex flex-wrap">
+                            <li>
+                                <h3><span class="counter">450</span>+</h3>
+                                <p>Happy Clients</p>
+                            </li>
+                            <li>
+                                <h3><span class="counter">399</span>+</h3>
+                                <p>Total Listing</p>
+                            </li>
+                            <li>
+                                <h3><span class="counter">254</span>+</h3>
+                                <p>Our Team</p>
+                            </li>
+                            <li>
+                                <h3><span class="counter">399</span>+</h3>
+                                <p>All Categories</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========================
+        COUNTER 2 END
+    ===========================-->
+
+
+    <!--=============================
+        FEATURED LISTING 2 START
+    ==============================-->
+    <section class="featured_listing_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 m-auto">
+                    <div class="wsus__section_heading mb-4">
+                        <h5>listing</h5>
+                        <h2>featured <span>listing</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="featured_listing_item_2">
+                        <div class="featured_listing_item_img">
+                            <img src="images/featured_listing_img_1.jpg" alt="listing" class="img-fluid w-100">
+                            <a class="green" href="#">popular</a>
+                        </div>
+                        <div class="featured_listing_item_text">
+                            <span class="author"><img src="images/card_img.jpg" alt="User"
+                                    class="img-fluid w-100"></span>
+                            <p class="rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                <span>(5 review)</span>
+                            </p>
+                            <a class="title" href="#">Hoter And Resort</a>
+                            <ul>
+                                <li><i class="fas fa-phone-alt"></i> Call:+6985224411026</li>
+                                <li><i class="fas fa-map-marker-alt"></i> San Francisco City Hall, San Francisco</li>
+                                <li><i class="fas fa-calendar-alt"></i> 07 days ago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="featured_listing_item_2">
+                        <div class="featured_listing_item_img">
+                            <img src="images/featured_listing_img_2.jpg" alt="listing" class="img-fluid w-100">
+                            <a class="red" href="#">popular</a>
+                        </div>
+                        <div class="featured_listing_item_text">
+                            <span class="author"><img src="images/card_img.jpg" alt="User"
+                                    class="img-fluid w-100"></span>
+                            <p class="rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                <span>(5 review)</span>
+                            </p>
+                            <a class="title" href="#">Hoter And Resort</a>
+                            <ul>
+                                <li><i class="fas fa-phone-alt"></i> Call:+6985224411026</li>
+                                <li><i class="fas fa-map-marker-alt"></i> San Francisco City Hall, San Francisco</li>
+                                <li><i class="fas fa-calendar-alt"></i> 07 days ago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="featured_listing_item_2">
+                        <div class="featured_listing_item_img">
+                            <img src="images/featured_listing_img_3.jpg" alt="listing" class="img-fluid w-100">
+                            <a class="orange" href="#">popular</a>
+                        </div>
+                        <div class="featured_listing_item_text">
+                            <span class="author"><img src="images/card_img.jpg" alt="User"
+                                    class="img-fluid w-100"></span>
+                            <p class="rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                <span>(5 review)</span>
+                            </p>
+                            <a class="title" href="#">Hoter And Resort</a>
+                            <ul>
+                                <li><i class="fas fa-phone-alt"></i> Call:+6985224411026</li>
+                                <li><i class="fas fa-map-marker-alt"></i> San Francisco City Hall, San Francisco</li>
+                                <li><i class="fas fa-calendar-alt"></i> 07 days ago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="featured_listing_item_2">
+                        <div class="featured_listing_item_img">
+                            <img src="images/featured_listing_img_4.jpg" alt="listing" class="img-fluid w-100">
+                            <a class="red" href="#">popular</a>
+                        </div>
+                        <div class="featured_listing_item_text">
+                            <span class="author"><img src="images/card_img.jpg" alt="User"
+                                    class="img-fluid w-100"></span>
+                            <p class="rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                <span>(5 review)</span>
+                            </p>
+                            <a class="title" href="#">Hoter And Resort</a>
+                            <ul>
+                                <li><i class="fas fa-phone-alt"></i> Call:+6985224411026</li>
+                                <li><i class="fas fa-map-marker-alt"></i> San Francisco City Hall, San Francisco</li>
+                                <li><i class="fas fa-calendar-alt"></i> 07 days ago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="featured_listing_item_2">
+                        <div class="featured_listing_item_img">
+                            <img src="images/featured_listing_img_5.jpg" alt="listing" class="img-fluid w-100">
+                            <a class="orange" href="#">popular</a>
+                        </div>
+                        <div class="featured_listing_item_text">
+                            <span class="author"><img src="images/card_img.jpg" alt="User"
+                                    class="img-fluid w-100"></span>
+                            <p class="rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                <span>(5 review)</span>
+                            </p>
+                            <a class="title" href="#">Hoter And Resort</a>
+                            <ul>
+                                <li><i class="fas fa-phone-alt"></i> Call:+6985224411026</li>
+                                <li><i class="fas fa-map-marker-alt"></i> San Francisco City Hall, San Francisco</li>
+                                <li><i class="fas fa-calendar-alt"></i> 07 days ago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="featured_listing_item_2">
+                        <div class="featured_listing_item_img">
+                            <img src="images/featured_listing_img_6.jpg" alt="listing" class="img-fluid w-100">
+                            <a class="green" href="#">popular</a>
+                        </div>
+                        <div class="featured_listing_item_text">
+                            <span class="author"><img src="images/card_img.jpg" alt="User"
+                                    class="img-fluid w-100"></span>
+                            <p class="rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                                <span>(5 review)</span>
+                            </p>
+                            <a class="title" href="#">Hoter And Resort</a>
+                            <ul>
+                                <li><i class="fas fa-phone-alt"></i> Call:+6985224411026</li>
+                                <li><i class="fas fa-map-marker-alt"></i> San Francisco City Hall, San Francisco</li>
+                                <li><i class="fas fa-calendar-alt"></i> 07 days ago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============================
+        FEATURED LISTING 2 END
+    ==============================-->
+
+
+    <!--============================
+        PRICING START
+    =============================-->
+    <section class="wsus__pricing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="wsus__section_heading mb-4">
+                        <h5>Pricing</h5>
+                        <h2>Our <span>Pricing</span> Packages</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="wsus__pricing_item">
+                        <h6>Standard</h6>
+                        <h2>$169 <span>/Month</span></h2>
+                        <ul>
+                            <li>Free Jobs Posting</li>
+                            <li>Free Jobs Marketing</li>
+                            <li>Free 5 host & domain</li>
+                            <li>10 Featured Job</li>
+                            <li class="disable">Unlimited Updates</li>
+                            <li class="disable">Job displayed for 15 days</li>
+                            <li class="disable">24/7 dedicated Support</li>
+                        </ul>
+                        <a href="#" class="common_btn_2">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="wsus__pricing_item">
+                        <p>popular</p>
+                        <h6>Professional</h6>
+                        <h2>$239 <span>/Month</span></h2>
+                        <ul>
+                            <li>Free Jobs Posting</li>
+                            <li>Free Jobs Marketing</li>
+                            <li>Free 5 host & domain</li>
+                            <li>10 Featured Job</li>
+                            <li>Unlimited Updates</li>
+                            <li class="disable">Job displayed for 15 days</li>
+                            <li class="disable">24/7 dedicated Support</li>
+                        </ul>
+                        <a href="#" class="common_btn_2">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="wsus__pricing_item">
+                        <h6>Platinum</h6>
+                        <h2>$299 <span>/Month</span></h2>
+                        <ul>
+                            <li>Free Jobs Posting</li>
+                            <li>Free Jobs Marketing</li>
+                            <li>Free 5 host & domain</li>
+                            <li>10 Featured Job</li>
+                            <li>Unlimited Updates</li>
+                            <li>Job displayed for 15 days</li>
+                            <li>24/7 dedicated Support</li>
+                        </ul>
+                        <a href="#" class="common_btn_2">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+        PRICING END
+    =============================-->
+
+
+    <!--============================
+        TESTIMONIAL 2 START
+    =============================-->
+    <section class="wsus__testimonial_2">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="wsus__section_heading mb-4">
+                    <h5>Testimonial</h5>
+                    <h2>Our Customer <span>Feedback</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row testi_slider_2">
+            <div class="col-xl-4">
+                <div class="wsus__single_testimonial_2">
+                    <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </p>
+                    <p class="description">Duis ullamcorper arcu egestas nisl luctus, sit amet lobortis lorem
+                        gravida Phasellus u mauris sodales hendre phasellus interdum lacinia diam bibendum nisi
+                        elementum urna.</p>
+                    <div class="wsus__testimonial_footer">
+                        <div class="img">
+                            <img src="images/testimonial_user_1.png" alt="user" class="img-fluid">
+                        </div>
+                        <h3>
+                            Spruce Springclean
+                            <span>Computer Engineer</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="wsus__single_testimonial_2">
+                    <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </p>
+                    <p class="description">Duis ullamcorper arcu egestas nisl luctus, sit amet lobortis lorem
+                        gravida Phasellus u mauris sodales hendre phasellus interdum lacinia diam bibendum nisi
+                        elementum urna.</p>
+                    <div class="wsus__testimonial_footer">
+                        <div class="img">
+                            <img src="images/testimonial_user_3.png" alt="user" class="img-fluid">
+                        </div>
+                        <h3>
+                            Spruce Springclean
+                            <span>Computer Engineer</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="wsus__single_testimonial_2">
+                    <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </p>
+                    <p class="description">Duis ullamcorper arcu egestas nisl luctus, sit amet lobortis lorem
+                        gravida Phasellus u mauris sodales hendre phasellus interdum lacinia diam bibendum nisi
+                        elementum urna.</p>
+                    <div class="wsus__testimonial_footer">
+                        <div class="img">
+                            <img src="images/testimonial_user_2.png" alt="user" class="img-fluid">
+                        </div>
+                        <h3>
+                            Spruce Springclean
+                            <span>Computer Engineer</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="wsus__single_testimonial_2">
+                    <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </p>
+                    <p class="description">Duis ullamcorper arcu egestas nisl luctus, sit amet lobortis lorem
+                        gravida Phasellus u mauris sodales hendre phasellus interdum lacinia diam bibendum nisi
+                        elementum urna.</p>
+                    <!-- <div class="testimonial_logo">
+                        <img src="images/testimonial_logo_3.png" alt="Testimonial" class="img-fluid">
+                    </div> -->
+                    <div class="wsus__testimonial_footer">
+                        <div class="img">
+                            <img src="images/testimonial_user_3.png" alt="user" class="img-fluid">
+                        </div>
+                        <h3>
+                            Spruce Springclean
+                            <span>Computer Engineer</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+        TESTIMONIAL 2 END
+    =============================-->
+
+
+    <!--============================
+        BLOG 2 START
+    =============================-->
+    <section class="wsus__blog_2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="wsus__section_heading mb-4">
+                        <h5>RECENT POSTS</h5>
+                        <h2>Our Latest <span>News</span> Feed</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-6">
+                    <div class="wsus__single_blog_2">
+                        <div class="wsus__single_blog_2_img">
+                            <img src="images/blog_2_img_1.jpg" alt="blog" class="img-fluid w-100">
+                            <a class="green" href="#" class="category">Coaching</a>
+                        </div>
+                        <div class="wsus__single_blog_2_text">
+                            <ul class="d-flex flex-wrap">
+                                <li>
+                                    <span>
+                                        <img src="images/calendar_black.png" alt="icon" class="img-fluid">
+                                    </span>
+                                    March 23, 2024
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="images/user_icon_black.png" alt="user" class="img-fluid">
+                                    </span>
+                                    By Eleanor Fant
+                                </li>
+                            </ul>
+                            <a href="#" class="title">How to Plan a Budget-Friendly Trip to Bankok.</a>
+                            <p>Nullam tincidunt tortor est maximus justo gravida non phasellus dignissim quam odio.</p>
+                            <a class="read_btn_2" href="#">Read More <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-6">
+                    <div class="wsus__single_blog_2">
+                        <div class="wsus__single_blog_2_img">
+                            <img src="images/blog_2_img_4.jpg" alt="blog" class="img-fluid w-100">
+                            <a class="red" href="#" class="category">DEVELOPMENT</a>
+                        </div>
+                        <div class="wsus__single_blog_2_text">
+                            <ul class="d-flex flex-wrap">
+                                <li>
+                                    <span>
+                                        <img src="images/calendar_black.png" alt="icon" class="img-fluid">
+                                    </span>
+                                    March 23, 2024
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="images/user_icon_black.png" alt="user" class="img-fluid">
+                                    </span>
+                                    By Eleanor Fant
+                                </li>
+                            </ul>
+                            <a href="#" class="title">5 Must-Visit Spots for Foodies in Japan.</a>
+                            <p>Nullam tincidunt tortor est maximus justo gravida non phasellus dignissim quam odio.</p>
+                            <a class="read_btn_2" href="#">Read More <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-6">
+                    <div class="wsus__single_blog_2">
+                        <div class="wsus__single_blog_2_img">
+                            <img src="images/blog_2_img_3.jpg" alt="blog" class="img-fluid w-100">
+                            <a class="orange" href="#" class="category">DEVELOPMENT</a>
+                        </div>
+                        <div class="wsus__single_blog_2_text">
+                            <ul class="d-flex flex-wrap">
+                                <li>
+                                    <span>
+                                        <img src="images/calendar_black.png" alt="icon" class="img-fluid">
+                                    </span>
+                                    March 23, 2024
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="images/user_icon_black.png" alt="user" class="img-fluid">
+                                    </span>
+                                    By Eleanor Fant
+                                </li>
+                            </ul>
+                            <a href="#" class="title">The Best Delicious Coffee Shop In Bangkok China.</a>
+                            <p>Nullam tincidunt tortor est maximus justo gravida non phasellus dignissim quam odio.</p>
+                            <a class="read_btn_2" href="#">Read More <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+        BLOG 2 END
+    =============================-->
+
+
+    <!--==========================
+        FOOTER 2 START
+    ===========================-->
+    <footer class="footer_2">
+        <div class="container">
+            <div class="footer_2_subscription_bg" style="background: url(images/subscribe_bg.jpg);">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer_2_subs_text">
+                            <h2>Subscribe our newsletter</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="footer_2_subs_form">
+                            <input type="text" placeholder="Email address here">
+                            <button class="common_btn_2" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_2_bg" style="background: url(images/footer_2_bg.jpg);">
+            <div class="footer_2_overlay">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-md-6 col-lg-4">
+                            <div class="footer_text">
+                                <a class="footer_logo" href="index_2.html">
+                                    <img src="images/logo2.png" alt="logo" class="img-fluid">
+                                </a>
+                                <p>In publishing and graphic designLorem Ipsum dummy and typesetting.</p>
+                                <ul class="footer_icon">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-6 col-md-6 col-lg-2">
+                            <div class="footer_text">
+                                <h3>My Account</h3>
+                                <ul class="footer_link">
+                                    <li><a href="#">login</a></li>
+                                    <li><a href="#">register</a></li>
+                                    <li><a href="#">Destinations</a></li>
+                                    <li><a href="#">change password</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-6 col-md-6 col-lg-2">
+                            <div class="footer_text">
+                                <h3>Information</h3>
+                                <ul class="footer_link">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Feedbacek</a></li>
+                                    <li><a href="#">report</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-4">
+                            <div class="footer_text footer_contact">
+                                <h3>Talk To Us</h3>
+                                <ul class="footer_link">
+                                    <li>
+                                        <p>
+                                            <i class="far fa-map-marker-alt"></i>
+                                            San Francisco City Hall, San Francisco
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:example@gmail.com">
+                                            <i class="fal fa-envelope"></i>
+                                            example@gmail.com
+                                        </a>
+                                    <li>
+                                        <a href="callto:+6985224411026">
+                                            <i class="fal fa-phone-alt"></i>
+                                            +6985224411026
+                                        </a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&#64; 2021 <a href="#">DB.Card</a> All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="footer_bottom_link">
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy </a></li>
+                            <li><a href="#"> Contact </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--==========================
+        FOOTER 2 END
+    ===========================-->
+
+
+    <!--=============SCROLL BTN==============-->
+    <div class="scroll_btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!--=============SCROLL BTN==============-->
+
+
+
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--slick js-->
+    <script src="js/slick.min.js"></script>
+    <!--venobox js-->
+    <script src="js/venobox.min.js"></script>
+    <!--counter js-->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <!--nice select js-->
+    <script src="js/select2.min.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--summer_note js-->
+    <script src="js/summernote.min.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
