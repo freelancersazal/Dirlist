@@ -347,8 +347,6 @@
 /*====================
   BREADCRUMB  END
 =====================*/
-
-
 #user_about .small_heading {
 	text-align: right;
 }
@@ -1195,8 +1193,6 @@
 }
 
 /* new css end */
-
-
 .wsus__about_us_text .wsus__section_heading h2,
 .wsus__about_us_text .wsus__section_heading {
 	text-align: right;
@@ -1544,7 +1540,6 @@
 }
 
 /* home 3 end */
-
 .home_2 .wsus__topbar_right li select {
 	background-position: left 0.7rem top 50%;
 }
@@ -1564,13 +1559,6 @@
 	margin-left: 20px;
 }
 
-
-
-
-
-
-
-
 #wsus__topbar .nice-select {
 	padding-left: 35px;
 	padding-right: 15px;
@@ -1587,15 +1575,10 @@
 	margin-right: 0;
 }
 
-
-
-
-
-
-
-
-
-
+.home_3 #wsus__topbar .nice-select {
+	border-left: 0;
+	border-right: 1px solid #ffffff36;
+}
 
 @media (min-width: 1200px) and (max-width: 1399px) {
 	.wsus__pricing_item_3 .icon {
@@ -1996,8 +1979,6 @@
 	}
 
 	/* new css end */
-
-
 	.main_menu_2 .navbar-toggler {
 		text-align: center;
 		margin-right: 0;
@@ -2040,5 +2021,9 @@
 
 	.wsus__pricing_item_3 .icon {
 		left: 20px;
+	}
+
+	.home_3 .wsus__topbar_right li {
+		margin-right: 0;
 	}
 }

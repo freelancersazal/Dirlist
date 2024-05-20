@@ -4474,8 +4474,6 @@ PAGINATION PART END
 	color: #fff;
 }
 
-.schedule {}
-
 .schedule table tr td {
 	text-transform: capitalize;
 	font-size: 16px !important;
@@ -4880,12 +4878,6 @@ footer,
 .wsus__heading_area h2::before,
 .wsus__heading_area h2::after {}
 
-
-
-
-
-
-
 /* new css start */
 .visitor_rev_area form {
 	overflow: hidden;
@@ -5242,17 +5234,6 @@ footer,
 	color: var(--colorWhite);
 	background: var(--colorSecondary) !important;
 }
-
-#wsus__topbar .nice-select .option.focus {}
-
-/* #wsus__topbar .nice-select .option.selected.focus {
-	background-color: red;
-} */
-
-
-
-
-
 
 /* topbar 2 end */
 
@@ -5810,12 +5791,6 @@ footer,
 	text-align: left;
 }
 
-.wsus__about_us_text .wsus__section_heading h2 span::after {
-	/* height: 38%; */
-}
-
-.wsus__about_us_text {}
-
 .wsus__about_us_text p {
 	margin-top: 22px;
 }
@@ -5997,11 +5972,6 @@ footer,
 	left: -80px;
 }
 
-.wsus__pricing_item ul::before {
-	/* top: auto; */
-	/* bottom: 0; */
-}
-
 .wsus__pricing_item ul li {
 	font-size: 16px;
 	font-weight: 400;
@@ -6152,20 +6122,11 @@ footer,
 	margin-top: 0;
 }
 
-.wsus__testimonial_2 h2 span::after {
-	/* height: 57%; */
-}
-
 /* testimonial 2 end */
-
 
 /* blog 2 start */
 .wsus__blog_2 {
 	margin-top: 100px;
-}
-
-.wsus__blog_2 .wsus__section_heading h2 span::after {
-	/* height: 32%; */
 }
 
 .wsus__single_blog_2 {
@@ -6436,8 +6397,6 @@ footer,
 	margin-bottom: 0;
 }
 
-
-
 .footer_2_subscription_bg {
 	background-position: center !important;
 	background-repeat: no-repeat !important;
@@ -6449,8 +6408,6 @@ footer,
 	position: relative;
 	z-index: 1;
 }
-
-.footer_2_subs_text {}
 
 .footer_2_subs_text h2 {
 	font-size: 38px;
@@ -7142,36 +7099,14 @@ footer,
 	left: 0;
 }
 
-.wsus__about_3_img {}
-
 .wsus__about_3_img .img_1,
 .wsus__about_3_img .img_2 {
 	height: 500px;
 }
 
-.wsus__about_3_img .img_1 img,
-.wsus__about_3_img .img_2 img {
-	/* width: 100% !important; */
-	/* height: 100% !important; */
-	/* object-fit: cover !important; */
-}
-
 .wsus__about_3_text {
 	position: relative;
 }
-
-/* .wsus__about_3_text::after {
-	position: absolute;
-	content: "";
-	background: url(../images/juice_shapes.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 50px;
-	height: 83px;
-	top: 25%;
-	left: 3%;
-} */
 
 .wsus__about_3_text p {
 	margin-top: 10px;
@@ -7229,14 +7164,9 @@ footer,
 /* counter 3 start */
 .wsus__counter_3 {
 	margin-top: 100px;
-	/* background: url(../images/counter_bg_3.svg); */
 	background-position: center !important;
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
-}
-
-.wsus__counter_3_overlay {
-	/* background: #000000c9; */
 }
 
 .wsus__counter_area_3 {
