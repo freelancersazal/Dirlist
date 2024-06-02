@@ -337,7 +337,7 @@ p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 80px;
+	height: 80px !important;
 	background: #fff;
 	z-index: 9;
 }
@@ -5139,25 +5139,27 @@ footer,
 
 /* topbar 2 start */
 .home_2 #wsus__topbar {
-	background: #ff5a5f3b;
+	background: var(--colorBlack);
 	position: relative;
 	z-index: 99;
 }
 
 .home_2 .wsus__topbar_left li a {
-	color: var(--colorBlack);
+	color: var(--colorWhite);
+	opacity: .9;
 }
 
 .home_2 .wsus__topbar_right li a {
-	color: var(--colorBlack);
+	color: var(--colorWhite);
+	opacity: .9;
 }
 
 .home_2 .wsus__topbar_login {
-	background: var(--colorSecondary);
+	background: none;
 	font-weight: 400;
-	border-radius: 6px;
+	/* border-radius: 6px; */
 	color: var(--colorWhite) !important;
-	padding: 0px 15px !important;
+	padding: 0 !important;
 	line-height: 35px;
 }
 
@@ -5168,17 +5170,23 @@ footer,
 #wsus__topbar .nice-select {
 	font-size: 14px;
 	width: 115px;
-	height: 37px;
-	line-height: 37px;
+	height: 39px;
+	line-height: 39px;
 	padding-left: 15px;
 	padding-right: 35px;
 	border: none;
+	border-left: 1px solid #ffffff82;
+	border-right: 1px solid #ffffff63;
+	border-radius: 0;
 	margin-top: 1px;
+	background: none;
+	color: var(--colorWhite);
 }
 
 #wsus__topbar .nice-select .current {
-	color: var(--colorBlack);
+	color: var(--colorWhite);
 	font-size: 15px;
+	opacity: .9;
 }
 
 #wsus__topbar .nice-select .option {
@@ -5199,7 +5207,7 @@ footer,
 	border-right: none;
 	transform-origin: initial;
 	transform: rotate(0);
-	border-color: #6a6a6a transparent transparent transparent;
+	border-color: #ffffff transparent transparent transparent;
 	border-style: solid;
 	border-width: 6px 4px 0 4px;
 	height: 0;
@@ -5242,6 +5250,10 @@ footer,
 .main_menu_2 {
 	position: fixed;
 	top: 40px;
+}
+
+.main_menu_2 li:hover .menu_droapdown {
+	top: 102%;
 }
 
 .home_2 #wsus__topbar .container-fluid,
@@ -6725,6 +6737,10 @@ footer,
 	background: var(--colorBlack);
 	border: none;
 	z-index: 999;
+}
+
+.main_menu_3 li:hover .menu_droapdown {
+	top: 99%;
 }
 
 .main_menu_3 .right_menu {
